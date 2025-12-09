@@ -1,54 +1,57 @@
-# Projeto---arquitetura-de-dados-
-Projeto - arquitetura de dados 
-A Chuva é o Principal Fator para Desastres Hidrológicos?
-Análise de dados pluviométricos, fluviométricos e registros oficiais — Estado de São Paulo
+Arquitetura de Dados aplicada à análise pluviométrica, fluviométrica e registros oficiais — Estado de São Paulo
 
-📌 Descrição do Projeto
+📘 Descrição do Projeto
 
-Este projeto investiga se a chuva é realmente o principal fator responsável pelos desastres hidrológicos no estado de São Paulo.
-Apesar do senso comum apontar a precipitação como causa direta de inundações e deslizamentos, estudos recentes e dados oficiais indicam que essa relação não é tão simples.
+Este projeto investiga se a chuva é realmente o principal fator responsável pelos desastres hidrológicos ocorridos no estado de São Paulo. Embora seja comum associar enchentes, alagamentos e deslizamentos diretamente à precipitação, estudos recentes e bases oficiais revelam que essa relação é mais complexa.
 
-Para compreender melhor esse fenômeno, o projeto analisa:
+A análise combina dados de:
 
-Dados de pluviometria e fluviometria do SAISP/USP
+Pluviometria e fluviometria (SAISP/USP)
 
-Registros oficiais de desastres do Atlas Digital de Desastres no Brasil
+Registros de desastres (Atlas Digital de Desastres no Brasil)
 
-Comparações temporais entre chuva, nível do rio e quantidade de desastres
+Séries temporais e correlações estatísticas
 
-O estudo envolve métodos de ciência de dados e visualização analítica para identificar padrões e avaliar se existe correlação real entre chuva e desastres.
+Utilizando técnicas de ciência de dados, modelagem e visualização, o projeto busca compreender como diferentes variáveis hidrológicas e urbanas interagem e influenciam a ocorrência desses eventos.
 
-🎯 Objetivo
+🎯 Objetivo do Estudo
 
-O principal objetivo é identificar se a precipitação é o fator determinante para desastres hidrológicos nos municípios paulistas, com foco especial na bacia do rio Atibaia.
-O projeto busca responder:
+O objetivo central é verificar se a precipitação é realmente o fator determinante para desastres hidrológicos nos municípios paulistas — com foco especial na bacia do rio Atibaia.
 
-"A chuva isoladamente explica a ocorrência de desastres hidrológicos?"
+A pergunta norteadora é:
+
+“A chuva isoladamente explica a ocorrência de desastres hidrológicos?”
 
 🧪 Metodologia
-🔍 Coleta de Dados
+🔍 1. Coleta de Dados
 
 Atlas Digital de Desastres no Brasil
 
-SAISP/USP — Sistema de Alerta a Inundações de São Paulo
+SAISP/USP – Sistema de Alerta a Inundações de São Paulo
 
-🧼 Tratamento dos Dados
+🧼 2. Tratamento e Processamento
 
-Processamento realizado em Python (Jupyter)
+Executado em Python (Jupyter Notebook):
 
-limpeza
+limpeza e padronização dos datasets
 
-padronização
+unificação e organização cronológica
 
-modelagem de séries temporais
+criação de indicadores (médias mensais, agregações)
 
-📊 Análises e Visualização
+modelagem básica de séries temporais
 
-Criação de tabelas, gráficos e correlações
+📊 3. Análises e Visualização
 
-Construção de dashboards no Power BI
+gráficos comparativos PLU × FLU × Desastres
 
-🌧️ Dados utilizados:
+tabelas de médias, picos e variação sazonal
+
+análise de correlação
+
+dashboard executivo no Power BI
+
+🌧️ Dados analisados
 
 Média mensal de pluviometria (PLU)
 
@@ -56,38 +59,54 @@ Média mensal de fluviometria (FLU)
 
 Quantidade de desastres por município
 
-📈 Resultados Principais
+📈 Principais Resultados
 
-Em Valinhos, um dos municípios analisados, foi identificado que a chuva não é o principal fator desencadeador de desastres hidrológicos.
+A investigação mostrou que, no município de Valinhos, a chuva não é o principal fator responsável pelos desastres hidrológicos.
 
-Fatores urbanos tiveram influência muito maior:
+Fatores urbanos apresentaram impacto significativamente maior, como:
 
-impermeabilização
+impermeabilização do solo
 
 urbanização acelerada
 
-drenagem insuficiente
+infraestrutura de drenagem insuficiente
 
-ocupação de áreas de risco
+ocupação de áreas suscetíveis a risco
 
-A correlação entre chuva, nível do rio e ocorrência de desastres não foi forte o suficiente para concluir que a precipitação é o fator dominante.
+Além disso:
 
-Gráficos e visualizações (por exemplo: correlação Plu x Flu x Desastres) reforçam essa interpretação.
+A correlação entre chuva e desastres foi baixa.
+
+A variabilidade do nível do rio não respondeu proporcionalmente ao aumento de precipitação.
+
+Eventos críticos ocorreram mesmo em meses com baixa chuva.
+
+Esses aspectos reforçam que o problema é multifatorial — e não puramente meteorológico.
 
 🧭 Conclusão
 
-O estudo demonstra que:
+O estudo conclui que:
 
-A chuva é apenas um dos fatores associados aos desastres hidrológicos — e não o mais determinante em muitos cenários urbanos.
+A chuva é apenas um dos fatores que contribuem para desastres hidrológicos — e frequentemente não é o mais decisivo em ambientes urbanos.
 
-Para análises mais precisas, recomenda-se integrar:
+Para análises mais robustas e modelos preditivos eficazes, recomenda-se integrar:
 
-dados meteorológicos
+variáveis meteorológicas
 
-variáveis urbanísticas
+indicadores de urbanização
 
-informações socioeconômicas
+dados socioeconômicos
 
-características da drenagem e impermeabilização
+informações geoespaciais
 
-O trabalho reforça a importância de políticas públicas voltadas à infraestrutura urbana e ao planejamento territorial.
+características da drenagem urbana
+
+A pesquisa também destaca a importância de políticas públicas focadas em:
+
+planejamento territorial
+
+drenagem eficiente
+
+gestão de risco
+
+ocupação controlada em áreas vulneráveis
